@@ -12,6 +12,7 @@ Things you may want to cover:
 
 * List of learning sites   
 1. [【Rails】IDとパスワードによる認証機能の実装【初学者】](https://autovice.jp/articles/168)
-1. [Qiita Rails 7.0 + Ruby 3.1でゼロからアプリを作ってみたときにハマったところあれこれ](https://qiita.com/jnchito/items/5c41a7031404c313da1f)
-
+1. [Qiita:Rails 7.0 + Ruby 3.1でゼロからアプリを作ってみたときにハマったところあれこれ](https://qiita.com/jnchito/items/5c41a7031404c313da1f)
+1. [Zenn:Rails 6.1.1にTurbo Driveをインストールして困ったこと](https://zenn.dev/satococoa/articles/95122320f1ca87)
+1. [Qiita:https://qiita.com/suketa/items/e6a37cc0b466768edf57](https://qiita.com/suketa/items/e6a37cc0b466768edf57)
 * ...
