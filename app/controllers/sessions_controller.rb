@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
   before_action :require_login, only: [:destroy]
 
   def new
+    @user = User.new
   end
 
   def create
