@@ -59,6 +59,7 @@ gem "valid_email2"
 gem "nokogiri"
 gem 'bootstrap-icons-helper'
 gem 'devise'
+gem 'devise-i18n'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -80,5 +81,8 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
-  gem "webdrivers"
+  # Easy installation and use of web drivers to run system tests with browsers
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
+  gem 'webdrivers'
 end
