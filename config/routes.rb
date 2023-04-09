@@ -1,14 +1,18 @@
 Rails.application.routes.draw do
-  devise_for :admin_users, controllers: {
-    registrations: 'admin/registrations',
-    sessions: 'admin/sessions'
+  devise_for :admins, controllers: {
+    sessions: 'admin/sessions',
+    passwords: 'admin/passwords',
+    registrations: 'admin/registrations'
+  }
+
+  devise_for :users, controllers: {
+    sessions: 'user/sessions',
+    passwords: 'user/passwords',
+    registrations: 'user/registrations'
   }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
   # root "articles#index"
-
-namespace :admin do
-  root to: "top#index"
-  end
+  root to: 'home#index'
 end
