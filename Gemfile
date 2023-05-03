@@ -37,7 +37,7 @@ gem "jbuilder"
 # gem "kredis"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-gem "bcrypt", "~> 3.1.7"
+# gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
@@ -46,10 +46,20 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
+
+# Exted Gem
+gem "rails-i18n"
+gem "kaminari"
+gem "date_validator"
+gem "valid_email2"
+gem "nokogiri"
+gem 'bootstrap-icons-helper'
+gem 'devise'
+gem 'devise-i18n'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -71,5 +81,8 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
-  gem "webdrivers"
+  # Easy installation and use of web drivers to run system tests with browsers
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
+  gem 'webdrivers'
 end

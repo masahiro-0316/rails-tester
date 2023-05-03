@@ -1,0 +1,39 @@
+ja:
+  top:
+    service_list:
+      sign_in: ログイン
+      sign_out: ログアウト
+      sign_up: アカウント登録
+  users: &user_attributes
+    top:
+      index:
+        account: アカウント
+        accountant: 経理
+        admin: 管理者
+      dashboard: 
+        dashboard: ダッシュボード
+        news: ニュース
+      show:
+        account_edit: アカウント編集
+        account_name: アカウント名
+        email: Eメール
+        password: パスワード
+        service_type: サービスの種類
+        start_date: 開始日
+        end_date: 終了日
+    shared:
+      navber:
+        sign_in: ログイン
+        sign_out: ログアウト
+      header:
+        account: アカウント
+        acct_menu: 経理士メニュー
+        acct_manage: 経理士アカウント管理
+        acct_history: 経理士アクセス履歴
+        user_menu: 顧客メニュー
+        user_manage: 顧客アカウント管理
+        user_history: 顧客アクセス履歴
+  admin_users:
+    <<: *user_attributes
+  accountant_users:
+    <<: *user_attributes
