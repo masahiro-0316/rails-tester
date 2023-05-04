@@ -10,9 +10,27 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+    ActiveRecord::Base.transaction do
+      @user = User.new(nickname: params[:nickname])
+      @user.save!
+      @user_database_authentication = \
+        UserDatabaseAuthentication.new( \
+          user: @user, \
+          email: params[:user_database_authentication][:email], \
+          password: params[:user_database_authentication][:password], \
+          password_confirmation: params[:user_database_authentication][:password_confirmation])
+      @user_database_authentication.save!
+    end
+
+    sign_in(:user, @user)
+    sign_in(:database_authentication, @user_database_authentication)
+
+    redirect_to root_path
+  rescue
+    flash[:alert] = '処理に失敗しました。もう一度お試しください。'
+    return render :new
+  end
 
   # GET /resource/edit
   # def edit
