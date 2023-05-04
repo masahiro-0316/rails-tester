@@ -5,7 +5,8 @@ Rails.application.routes.draw do
     registrations: 'admin/registrations'
   }
 
-  devise_for :users, controllers: {
+  # devise_for :users, controllers: {
+  devise_for :user_database_authentications, controllers: {
     sessions: 'users/sessions',
     passwords: 'users/passwords',
     registrations: 'users/registrations'

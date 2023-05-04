@@ -25,6 +25,7 @@ ja:
         unconfirmed_email: 未確認Eメール
         unlock_token: ロック解除用トークン
         updated_at: 更新日
+      user_database_authentication: *user_attributes
     models:
       user: ユーザー
   devise: &devise
@@ -143,3 +144,4 @@ ja:
         other: "%{count} 件のエラーが発生したため %{resource} は保存されませんでした。"
 # モデル名毎に変換
   users: *devise
+  user_database_authentications: *devise
